@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ejercicios de Strings
+    </title>
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ejerciciosCadenas.js"></script>
+</head>
+
+<body>
+    <div class="row mt-3">
+
+        <div class="col"></div>
+
+        <div class="col bg-secondary text-light">
+            <p class="display-1 text-center">Ejercicios de Strings</p>
+            <!--enlace del formulrio a nombreedad.py-->
+            <form>
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="texto">Texto</label>
+                    <input class="form-control" type="text" name="texto" id="texto" placeholder="Introduce un texto"
+                        value="ABCD EFGH IJKL"><br />
+                    <label class="form-label" for="palabra">Palabra</label>
+                    <input class="form-control" type="text" name="palabra" id="palabra" placeholder="Introduce una palabra"
+                        value="ABCD"><br />
+                    <label class="form-label" for="letra">Letra</label>
+                    <input class="form-control" type="text" name="letra" id="letra" placeholder="Introduce una palabra"
+                        value="A"><br />
+                </div>
+                <div class="mb-3 mt-3">
+                    <button type="button" onclick="separaEnLineas()" class="btn btn-light">Separa en lineas</button>
+                    <button type="button" onclick="contarLetras()" class="btn btn-light">Contar letras</button>
+                    <button type="button" onclick="darVuelta()" class="btn btn-light">Dar Vuelta</button>
+                    <button type="button" onclick="buscarPalabra()" class="btn btn-light">Buscar Palabra</button>
+                    <button type="button" onclick="contarLetrasIguales()" class="btn btn-light">Contar Letras Iguales</button>
+                    <button type="button" onclick="contarVocales()" class="btn btn-light">Contar Vocales</button>
+                    <button type="button" onclick="separarPalabras()" class="btn btn-light">Separar Palabras</button>
+                    <button type="button" onclick="darVueltaPalabras()" class="btn btn-light">Dar Vuelta Palabras</button>
+                </div>
+            </form>
+            <div class="mb-3 mt-3">
+                <p>Resultado</p>
+                <div class="text-center" id="salida1">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <p id="salida">~</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

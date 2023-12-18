@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>LEVEL <b id="level">2</b></h1>
+    </div>
+    <div class="origin">
+        <div id="draggable-1" class="draggable" draggable="true" ondragstart="arrastrando(event);">
+            1
+        </div>
+        <div id="draggable-2" class="draggable" draggable="true" ondragstart="arrastrando(event);">
+            4
+        </div>
+        <div id="draggable-3" class="draggable" draggable="true" ondragstart="arrastrando(event);">
+            5
+        </div>
+        <div id="draggable-4" class="draggable" draggable="true" ondragstart="arrastrando(event);">
+            2
+        </div>
+    </div>
+
+    <div class="drop">
+        <div id="destino-1" class="dropzone" ondragover="recibiendo(event)" ondrop="soltar(event)">
+            
+        </div>
+        <div id="destino-2" class="dropzone" ondragover="recibiendo(event)" ondrop="soltar(event)">
+            
+        </div>
+        <div id="destino-3" class="dropzone" ondragover="recibiendo(event)" ondrop="soltar(event)">
+            
+        </div>
+        <div id="destino-4" class="dropzone" ondragover="recibiendo(event)" ondrop="soltar(event)">
+            
+        </div>
+    </div>
+    <div class="controls">
+        <button onclick="comprobar()">Comprobar</button>
+    </div>
+</body>
+
+</html>

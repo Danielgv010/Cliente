@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios que manipulan DOM</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <label for="entradaTexto">Entrada Texto</label>
+        <input type="text" id="entradaTexto">
+    </form>
+    <button type="button" onclick="addTexto()">Añadir texto (Ej1)</button>
+    <button type="button" onclick="addEnlace()">Añadir enlace (Ej3)</button>
+    <div id="miDiv">
+
+    </div>
+    <hr>
+    <button type="button" onclick="addLista()">Añadir lista (Ej2)</button>
+    <ul id="miLista">
+
+    </ul>
+    <hr>
+    <button type="button" onclick="cambiarColorMiElemento()">Cambiar color (Ej4)</button>
+    <div id="miElemento" style="height:150px;width:150px;">
+        <p>Mi elemento</p>
+    </div>
+    <hr>
+    <button type="button" onclick="cambiarFuente()">Cambiar fuente (Ej5)</button>
+    <h1 id="miTexto" style="font-size:10px;">Mi Texto</h1>
+    <hr>
+    <button type="button" onclick="ocultarElemento()">Ocultar elemento (Ej6)</button>
+    <h1 id="elementoOculto">Elemento oculto</h1>
+    <hr>
+    <h1 id="textoCambiante" onmouseenter="colorTexto(true)" onmouseleave="colorTexto(false)"
+        style="color: rgb(128, 0, 0);">Cambio de color (Ej7)</h1>
+</body>
+
+</html>

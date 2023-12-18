@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="col3" id="col1">
+            <div>
+                <button class="button" id="a" onclick="comprobar('a')">A</button>
+                <button class="button" id="b" onclick="comprobar('b')">B</button>
+            </div>
+            <div>
+                <button class="button" id="c" onclick="comprobar('c')">C</button>
+                <button class="button" id="d" onclick="comprobar('d')">D</button>
+            </div>
+            <div>
+                <button class="button" id="e" onclick="comprobar('e')">E</button>
+                <button class="button" id="f" onclick="comprobar('f')">F</button>
+            </div>
+            <div>
+                <button class="button" id="g" onclick="comprobar('g')">G</button>
+                <button class="button" id="h" onclick="comprobar('h')">H</button>
+            </div>
+            <div>
+                <button class="button" id="i" onclick="comprobar('i')">I</button>
+                <button class="button" id="j" onclick="comprobar('j')">J</button>
+            </div>
+            <div>
+                <button class="button" id="k" onclick="comprobar('k')">K</button>
+                <button class="button" id="l" onclick="comprobar('l')">L</button>
+            </div>
+            <div>
+                <button class="button" id="m" onclick="comprobar('m')">M</button>
+                <button class="button" id="n" onclick="comprobar('n')">N</button>
+            </div>
+            <div>
+                <button class="button" id="o" onclick="comprobar('o')">O</button>
+                <button class="button" id="p" onclick="comprobar('p')">P</button>
+            </div>
+            <div>
+                <button class="button" id="q" onclick="comprobar('q')">Q</button>
+                <button class="button" id="r" onclick="comprobar('r')">R</button>
+            </div>
+            <div>
+                <button class="button" id="s" onclick="comprobar('s')">S</button>
+                <button class="button" id="t" onclick="comprobar('t')">T</button>
+            </div>
+            <div>
+                <button class="button" id="u" onclick="comprobar('u')">U</button>
+                <button class="button" id="v" onclick="comprobar('v')">V</button>
+            </div>
+            <div>
+                <button class="button" id="w" onclick="comprobar('w')">W</button>
+                <button class="button" id="x" onclick="comprobar('x')">X</button>
+            </div>
+            <div>
+                <button class="button" id="y" onclick="comprobar('y')">Y</button>
+                <button class="button" id="z" onclick="comprobar('z')">Z</button>
+            </div>
+        </div>
+        <div class="col3" id="col2">
+            <img src="img/1.png" class="img" id="imgAhorcado" alt="ahorcado">
+            <button class="button" id="newGame" onclick="reset()">Nuevo Juego</button>
+        </div>
+        <div class="col3" id="col3">
+            <h1 id="barras"></h1>
+        </div>
+    </div>
+</body>
+
+</html>

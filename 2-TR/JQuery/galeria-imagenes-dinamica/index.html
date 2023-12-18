@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagenes Dinamica</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        .image-div {
+            position: relative;
+            overflow: hidden;
+            box-sizing: content-box;
+            margin-bottom: 5px;
+        }
+
+        .image-div button {
+            z-index: 9;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+
+        .resized-img-small {
+            width: 360px;
+            border-radius: 1em;
+        }
+
+        body {
+            display: inline-block;
+            padding: 1rem;
+            column-count: 4;
+            column-gap: 5px;
+            background: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="url" id="url" value="https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340">
+        <button id="add-imagen">Añadir</button>
+    </div>
+</body>
+
+</html>
+<!-- https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340 -->
+<!-- https://mywowo.net/media/images/cache/dubai_img_worlds_of_adventure_01_presentazione_jpg_1200_630_cover_85.jpg -->

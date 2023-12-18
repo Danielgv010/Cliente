@@ -1,0 +1,41 @@
+.draggable,.dropzone{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 75pt;;
+}
+.draggable{
+    position: relative;
+    background-color:rgb(8, 148, 101);
+}
+.draggable.image{
+    color: rgba(255, 255, 255,0);
+}
+.draggable.image img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    pointer-events: none;
+}
+.dropzone{
+    background-color: khaki;
+    height: 125px;
+    width: 125px;
+}
+.origin,.drop{
+    margin-bottom: 15px;
+}
+.origin,.drop,.controls,.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.disable{
+    pointer-events: none;
+}
