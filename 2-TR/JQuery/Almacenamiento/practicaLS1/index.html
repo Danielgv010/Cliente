@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 de Local Storage</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/almacenamiento.js"></script>
+</head>
+<body>
+    <h1>Almamcenamiento en Local Storage</h1>
+    <input type="text" id="datoTexto" value="John Doe"><br>
+    <input type="number" id="datoNumber" value="22"><br>
+    <input type="email" id="datoEmail" value="john@doe.com"><br>
+    <input type="datetime-local" id="datoFecha" value="2000-01-01T00:00"><br>
+    <input type="color" id="datoColor" value="#FAFAFA">
+
+    <button onclick="guardar()">Guardar</button>
+    <button onclick="borrar()">Borrar</button>
+    <button onclick="recuperar()">Recuperar</button>
+</body>
+</html>

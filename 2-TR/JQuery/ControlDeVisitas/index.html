@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display:flex">
+
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre"><br><br>
+            <label for="nombre">Apellidos:</label><br>
+            <input type="text" id="apellidos"><br><br>
+            <label for="nombre">DNI:</label><br>
+            <input type="text" id="dni"><br><br>
+            <label for="nombre">Persona de contacto:</label><br>
+            <input type="text" id="contacto"><br><br>
+            <button type="button" id="registrar">Registrar</button>
+            <button type="button" id="limpiar">Limpiar</button>
+        </div>
+        <div style="border-right: 1px solid black;border-left: 1px solid black;height: 100svh;padding:0em 3em;margin:0em 3em 3em 3em;">
+            <h1>Entradas</h1>
+            <label for="busquedaEntradaDni">Buscar por DNI</label>
+            <input type="text" id="busquedaEntradaDni">
+            <button type="button" id="busquedaEntradaDniBoton">B</button><br>
+            <label for="busquedaEntradaApellidos">Buscar por Apellidos</label>
+            <input type="text" id="busquedaEntradaApellidos">
+            <button type="button" id="busquedaEntradaApellidosBoton">B</button>
+
+            <table id="tablaEntrada">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Contacto</th>
+                    <th>Fecha Entrada</th>
+                    <th>X</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Salidas</h1>
+            <label for="busquedaSalidaDni">Buscar por DNI</label>
+            <input type="text" id="busquedaSalidaDni">
+            <button type="button" id="busquedaSalidaDniBoton">B</button>
+            <label for="busquedaSalidaApellidos">Buscar por Apellidos</label>
+            <input type="text" id="busquedaSalidaApellidos">
+            <button type="button" id="busquedaSalidaApellidosBoton">B</button>
+
+            <table id="tablaSalida">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Contacto</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
